@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Lato:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+
+:root {
+    --default-font: 'Montserrat', sans-serif;
+    --title-font: 'Amatic SC', sans-serif;
+    --menu-font: 'Amatic SC', sans-serif;
+
+
+    --color1: #E2D43F;
+    --color2: #E9D3E7;
+    --color3: #7D4A9E;
+    --color4: #351546;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--default-font);
+    font-weight: 300;
+    color: white;
+}
+
+body {
+    padding: 0 40px;
+
+    background-color: var(--color4);
+}
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    
+    margin: auto;
+    padding-top: 5px;
+    top: 0;
+    position: sticky;
+
+    background-color: var(--color4);
+}
+
+.header-content {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-line {
+    width: 100%;
+    height: 1px;
+
+    margin-top: 10px;
+    background-color: var(--color1);
+}
+
+header nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: var(--menu-font);
+    font-size: 1.6em;
+}
+
+nav a:hover {
+    color: var(--color1);
+}
+
+header nav a {
+    margin-left: 80px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    padding: 30px 30px;
+    margin: auto;
+}
+
+aside {
+    padding-top: 20px;
+    margin-right: 100px;
+}
+
+aside nav a {
+    display: block;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+h1 {
+    margin-bottom: 30px;
+
+    font-family: var(--title-font);
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+}
+
+form {
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+form label {
+    color: white;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+form input {
+    width: 100%;
+
+    padding: 7px 10px;
+    margin: 10px 0;
+
+    border-width: 0;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+}
+
+fieldset {
+    border: 0;
+}
+
+button {
+    display: flex;
+    padding: 12px 24px;
+    margin: 40px auto;
+
+    border: none;
+    background-color: var(--color3);
+    border-radius: 10px;
+    box-shadow: -2px 2px var(--color2);
+
+    font-size: 1em;
+
+    cursor: pointer;
+}
+
+button:active {
+    color: var(--color2);
+    background-color: var(--color3);
+    box-shadow: inset -1.2px 1.2px var(--color2);
+    padding: 13px 25px 11px 23px;
+}

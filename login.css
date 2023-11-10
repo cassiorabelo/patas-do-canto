@@ -1,0 +1,25 @@
+.header-content h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    font-size: 3em;
+    margin: 0;
+}
+
+.header-content img {
+    margin-right: -80px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    width: 400px;
+}

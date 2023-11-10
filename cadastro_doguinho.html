@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patas do Canto</title>
+    <script src="scripts.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="image/x-icon" rel="shortcut icon" href="images/pata_icon.ico">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="#"><img src="images/logo_patas.png" alt="Logotipo Patas do Canto" width="80px"></a>
+            <nav>
+                <a href="#">Configurações</a>
+                <a href="login.html">Sair</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <aside>
+            <nav>
+                <a href="#">Painel</a>
+                <a href="#">Doguinhos</a>
+                <a href="#">Despesas</a>
+            </nav>
+        </aside>
+        <section>
+            <h1>Cadastro de doguinho</h1>
+            <form>
+                <div class="form-field">
+                    <label>Id</label>
+                    <input type="text" name="dog-id" id="dog-id" readonly>
+                </div>
+
+                <div class="form-field">
+                    <label>Nome</label>
+                    <input type="text" name="dog-name" id="dog-name">
+                </div>
+
+                <br><br>
+
+                <div class="form-field">
+                    <label>Data de nascimento</label>
+                    <input id="dogBirthDate" type="date">
+                </div>
+                
+                <div class="form-field">
+                    <label>Margem de erro (dias)</label>
+                    <input id="dogBirthDateMarginOfError" type="number">
+                </div>
+
+                <br><br>
+                
+                <div class="form-field">
+                    <label>Data de resgate</label>
+                    <input type="date" id="rescue-date">
+                </div>
+                
+                <div class="form-field">
+                    <label>Lar temporário</label>
+                    <input type="text" id="dog-temporary-home">
+                </div>
+
+                <div class="form-field">
+                    <label>Data de pagamento lar temporário</label>
+                    <input type="number" id="dog-temporary-home-due-date">
+                </div>
+
+                <button class="button" type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
